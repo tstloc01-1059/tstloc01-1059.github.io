@@ -12,6 +12,7 @@ body {
   font-size: 24px;
   height: 100%;
   font-family: "Archivo", sans-serif;
+  overflow-y: hidden;
 }
 
 blockquote {
@@ -19,7 +20,13 @@ blockquote {
   font-size: 125%;
 }
 
+h1 {
+  font-size: 300%;
+}
 
+p {
+  line-height: 150%;
+}
 
 ul {
       list-style-type: none;
@@ -33,18 +40,20 @@ ul {
     width: 55%;
     max-width: 75%;
     position: relative;
-    padding: 35px 10px;
+    padding-left: 10px;
+    top: -20px;
     /*background: #0f0;*/
-    overflow: auto;
+    overflow-y: hidden;
     z-index: 50;
+    /*font-family: "Open Sans", sans-serif;*/
 }
 
 .sidebar {
-    top: -30px;
+    top: -20px;
     position: fixed;
     margin-left: 47%;
     width: auto;
-    height: 110%;
+    height: 105%;
   /*  background: rgba(240, 240, 240, 0.5); */
     z-index: 100;
     font-size: 300%;
