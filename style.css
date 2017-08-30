@@ -60,13 +60,3 @@ ul {
   z-index: 150;
   opacity: 0.5;
 }
-
-.text-header {
-  padding: 35px 0px;
-  z-index: 75;
-}
-
-.text-image {
-  width: 100%;
-  height: 100%;
-}
