@@ -20,6 +20,10 @@ blockquote {
   font-size: 125%;
 }
 
+h1 {
+  font-size: 300%;
+}
+
 p {
   line-height: 150%;
 }
