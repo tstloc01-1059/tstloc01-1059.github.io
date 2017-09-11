@@ -73,10 +73,7 @@ ul {
   height: 100%;
   position: relative;
   /*background: #0f0;*/
-<<<<<<< HEAD
-=======
   overflow: auto;
->>>>>>> 8b5830275b86e43afe69a12f37de0e32c5278149
   z-index: 50;
   padding-top: 10px;
 }
