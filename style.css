@@ -5,11 +5,11 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    color: rgb(150,150,150);
+    color: rgb(175,175,175);
 }
 
 body {
-  font-size: 150%;
+  font-size: 100%;
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
@@ -36,13 +36,14 @@ p, ol {
 
 ul {
       list-style-type: none;
-      text-align: right;
+      text-align: left;
       padding-right: 1rem;
 }
 
 .content, .content-padding, .content-header, .sidebar {
   padding-left: 10px;
-  max-width: 75%;
+  max-width: 50%;
+  word-wrap: break-word;
 }
 
 .content {
@@ -50,9 +51,10 @@ ul {
     min-height: auto;
     position: relative;
     /*background: #0f0;*/
-    overflow: auto;
+    overflow-y: hidden;
     z-index: 45;
     top: -25px;
+    margin-left: 15%;
 }
 
 /* this section is actually video/soundcloud media or images */
@@ -65,6 +67,7 @@ ul {
   top: 40px;
   padding-bottom: 20px;
   padding-top: 10px;
+  margin-left: 15%;
 }
 
 /* this section is titles of texts */
@@ -73,25 +76,22 @@ ul {
   height: 100%;
   position: relative;
   /*background: #0f0;*/
-<<<<<<< HEAD
-=======
-  overflow: auto;
->>>>>>> 8b5830275b86e43afe69a12f37de0e32c5278149
   z-index: 50;
   padding-top: 10px;
+  margin-left: 15%;
 }
 
 .sidebar {
   padding-top: 40px;
-    right: 0px;
+    left: 0px;
     position: fixed;
-    width: 25%;
+    width: 15%;
     height: 100%;
     word-wrap: normal;
     font-family: "Roboto", sans-serif;
     z-index: 100;
-    opacity: 0.5;
     overflow: auto;
+    font-size: 75%;
 }
 
 .supertitle {
@@ -102,6 +102,6 @@ ul {
   width: 100%;
   font-size: 100%;
   z-index: 150;
-  /*background-color: #ff0;*/
+  background-color: #ff0;
   opacity: 0.5;
 }
