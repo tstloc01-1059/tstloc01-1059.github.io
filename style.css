@@ -1,0 +1,112 @@
+a:link, a:visited {
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgb(175,175,175);
+}
+
+body {
+  font-size: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 150%;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 300%;
+  padding: 0px;
+}
+
+h5 {
+  margin-top: 2%;
+}
+
+img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+p, ol {
+  line-height: 150%;
+}
+
+ul {
+      list-style-type: none;
+      text-align: left;
+      padding-right: 1rem;
+}
+
+.content, .content-padding, .content-header, .sidebar {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.content {
+    height: 100%;
+    min-height: auto;
+    position: relative;
+    /*background: #0f0;*/
+    overflow-y: hidden;
+    z-index: 45;
+    top: -25px;
+    margin-left: 0%;
+}
+
+/* this section is actually video/soundcloud media or images */
+
+.content-header {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 45;
+  top: 40px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-left: 0%;
+}
+
+/* this section is titles of texts */
+
+.content-padding {
+  height: 100%;
+  position: relative;
+  /*background: #0f0;*/
+  z-index: 50;
+  padding-top: 10px;
+  margin-left: 0%;
+}
+
+.sidebar {
+  padding-top: 40px;
+    left: 0px;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    word-wrap: normal;
+    font-family: "Roboto", sans-serif;
+    z-index: 100;
+    overflow: auto;
+    font-size: 75%;
+}
+
+.supertitle {
+  top: 0px;
+  left: 0px;
+  padding: 10px 0px 10px 10px;
+  position: fixed;
+  width: 100%;
+  font-size: 100%;
+  z-index: 150;
+  background-color: #ff0;
+  opacity: 1;
+}
