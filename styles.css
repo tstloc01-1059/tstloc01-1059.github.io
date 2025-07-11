@@ -1,0 +1,106 @@
+body {
+    font-family: "IBM Plex Mono";
+    font-size: 0.75rem;
+
+    background-image: linear-gradient(to bottom right, #ececec, #e3e3e3);
+
+    padding: 0;
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.9rem;
+
+}
+
+/* GROUPINGS */
+
+#xp_table,
+#info_table {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* XP TABLE BROAD */
+
+#xp_table {
+    width: 78%;
+}
+
+#xp_table #xp_line {
+    display: flex;
+    justify-content: left;
+}
+
+/* CATEGORIES */
+
+#xp_table #xp_line .code {
+    width: 10%;
+    /* background-color: wheat; */
+}
+
+#xp_table #xp_line .year {
+    text-align: left;
+    width: 5%;
+    /* background-color: tomato; */
+}
+
+#xp_table #xp_line .name {
+    text-align: left;
+    width: 50%;
+    /* background-color: blueviolet; */
+}
+
+#xp_table #xp_line .org {
+    text-align: right;
+    width: 20%;
+    /* background-color: aquamarine; */
+}
+
+#xp_table #xp_line .category {
+    width: 15%;
+    text-align: end;
+    /* background-color: brown; */
+}
+
+/* XP TABLE SUB CATEGORIES */
+
+.audio mark {
+    background-color: #0e1fb5;
+}
+
+/* INFO TABLE */
+
+#info_table {
+    position: fixed;
+    right: 0;
+    background-color: #0e1fb5;
+    background-image: radial-gradient(#d6fa5a 20%, #0e1fb5, #0e1fb5 80%);
+    /* background-image: radial-gradient(closest-corner at 20% 80%, #d6fa5a, #0e1fb5, #0e1fb5); */
+    width: 20%;
+    height: 100vh;
+
+}
+
+#info_table p {
+    color: white;
+    text-align: justify;
+}
+
+#info_table a {
+    color: black;
+    background-color: #d6fa5a;
+}
