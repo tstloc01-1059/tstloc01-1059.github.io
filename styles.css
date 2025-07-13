@@ -9,13 +9,22 @@ body {
 
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 @media (max-width: 1200px) {
     body {
         flex-direction: column-reverse;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    #info_table {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+
     }
 }
 
@@ -63,14 +72,14 @@ h1 {
 /* XP TABLE BROAD */
 
 #xp_table {
-    flex-shrink: 0;
-
-    /* width: 80%; */
+    flex: 2 1 auto;
+    min-width: 850px;
 }
 
 #xp_table #xp_line {
     display: flex;
-    justify-content: left;
+    /* width: max-content; */
+    /* justify-content: left; */
 }
 
 
@@ -97,8 +106,8 @@ h1 {
 
 #xp_table #xp_line .org {
     text-align: right;
-    width: 20%;
-    min-width: 100px;
+    width: 22%;
+    min-width: 120px;
     /* background-color: aquamarine; */
 }
 
@@ -140,11 +149,15 @@ h1 {
 /* INFO TABLE */
 
 #info_table {
+box-sizing: border-box;
+
+    flex: 2 1 auto;
+
+    min-width: 225px;
+    max-width: 400px;
+
     background-image: radial-gradient(#d6fa5a 20%, #0e1fb5, #0e1fb5 80%);
-    flex-shrink: 1;
-    /* flex-basis: auto; */
     min-height: 100%;
-    /* max-width: 20%; */
     padding-bottom: 20px;
 
 }
@@ -158,4 +171,20 @@ li {
 #info_table a {
     color: black;
     background-color: #d6fa5a;
+}
+
+@media (max-width: 1200px) {
+    body {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    #info_table {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+
+    }
 }
