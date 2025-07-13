@@ -1,8 +1,6 @@
-
-
 body {
     font-family: "IBM Plex Mono";
-    font-size: 0.75rem;
+    font-size: 10px;
 
     background-image: linear-gradient(to bottom right, #ececec, #e3e3e3);
 
@@ -11,6 +9,9 @@ body {
 
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+    justify-content: space-between;
 }
 
 a {
@@ -21,7 +22,7 @@ a {
 a:visited {
     color: black;
     /* background-color: #d6fa5a50; */
- } 
+}
 
 .code mark {
     background-color: transparent;
@@ -100,24 +101,34 @@ h1 {
     background-color: #afc5e0;
 }
 
-.publication mark {
-    background-color: #d6d6d6;
+.presentation mark {
+    background-color: #e7e683;
 }
 
 .project mark {
     background-color: #b7d9b4;
 }
 
+
+.publication mark {
+    background-color: #d6d6d6;
+}
+
+.teaching mark {
+    background-color: #e1cfea;
+}
+
+
 /* INFO TABLE */
 
 #info_table {
     /* position: fixed;
     right: 0; */
-    background-color: #0e1fb5;
+    /* background-color: #0e1fb5; */
     background-image: radial-gradient(#d6fa5a 20%, #0e1fb5, #0e1fb5 80%);
     /* background-image: radial-gradient(closest-corner at 20% 80%, #d6fa5a, #0e1fb5, #0e1fb5); */
     width: 20%;
-    height: 100%;
+    min-height: 100%;
 
 }
 
