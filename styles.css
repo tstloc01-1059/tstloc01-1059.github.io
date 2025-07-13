@@ -1,6 +1,6 @@
 body {
     font-family: "IBM Plex Mono";
-    font-size: 10px;
+    font-size: 1rem;
 
     background-image: linear-gradient(to bottom right, #ececec, #e3e3e3);
 
@@ -12,6 +12,12 @@ body {
     flex-direction: row;
     /* flex: 1; */
     justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -34,12 +40,12 @@ a:visited {
 
 
 h1 {
-    color: white;
-    text-decoration: underline;
+    color: black;
+    background-color: #e3e3e3;
+    /* text-decoration: underline; */
     font-size: 0.9rem;
-
+    font-weight: 900;
 }
-
 /* GROUPINGS */
 
 #xp_table,
@@ -132,7 +138,7 @@ h1 {
 
 }
 
-#info_table p {
+#info_table p, li {
     color: white;
     text-align: justify;
 }
@@ -140,4 +146,10 @@ h1 {
 #info_table a {
     color: black;
     background-color: #d6fa5a;
+}
+
+
+
+#info_table .experience {
+    text-align: left;
 }
