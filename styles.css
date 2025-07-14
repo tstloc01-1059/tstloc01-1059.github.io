@@ -149,7 +149,7 @@ h1 {
 /* INFO TABLE */
 
 #info_table {
-box-sizing: border-box;
+    box-sizing: border-box;
 
     flex: 2 1 auto;
 
@@ -178,13 +178,41 @@ li {
         flex-direction: column-reverse;
         justify-content: center;
     }
-}
 
-@media (max-width: 1200px) {
     #info_table {
         width: 100%;
         min-width: 0;
         max-width: 100%;
 
     }
+
+    #xp_table {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    #xp_line {
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+    }
+
+    #xp_line .code,
+    #xp_line .year,
+    #xp_line .name,
+    #xp_line .org,
+    #xp_line .category {
+        box-sizing: border-box;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        /* text-align: left !important; */
+        margin: 0 !important;
+        padding: 0 !important;
+        /* word-break: break-word !important; */
+        /* white-space: normal !important; */
+    }
 }
+
+/* @media (max-width: 1200px) {} */
