@@ -187,9 +187,12 @@ li {
     }
 
     #xp_table {
+        box-sizing: border-box;
         width: 100%;
         min-width: 0;
         max-width: 100%;
+        padding: 10px;
+        margin: 0;
     }
 
     #xp_line {
