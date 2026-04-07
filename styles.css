@@ -197,7 +197,7 @@ li {
         margin: 0;
     }
 
-    #xp_line {
+    .xp_line {
         flex-direction: column;
         justify-content: space-between;
         /* align-items: flex-start; */
