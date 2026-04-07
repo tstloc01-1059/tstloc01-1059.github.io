@@ -44,11 +44,13 @@ a:visited {
     /* background-color: #d6fa5a50; */
 }
 
-.code mark {
+.code mark,
+.name mark {
     background-color: transparent;
 }
 
-.code mark:hover {
+.xp_line:hover .code mark,
+.xp_line:hover .name mark {
     background-color: #d6fa5a;
 }
 
@@ -76,7 +78,7 @@ h1 {
     min-width: 850px;
 }
 
-#xp_table #xp_line {
+#xp_table .xp_line {
     display: flex;
     /* width: max-content; */
     /* justify-content: left; */
@@ -85,33 +87,33 @@ h1 {
 
 /* CATEGORIES */
 
-#xp_table #xp_line .code {
+#xp_table .xp_line .code {
     width: 10%;
     min-width: 55px;
     /* background-color: wheat; */
 }
 
-#xp_table #xp_line .year {
+#xp_table .xp_line .year {
     text-align: left;
     width: 5%;
     min-width: 45px;
     /* background-color: tomato; */
 }
 
-#xp_table #xp_line .name {
+#xp_table .xp_line .name {
     text-align: left;
     width: 50%;
     /* background-color: blueviolet; */
 }
 
-#xp_table #xp_line .org {
+#xp_table .xp_line .org {
     text-align: right;
     width: 22%;
     min-width: 120px;
     /* background-color: aquamarine; */
 }
 
-#xp_table #xp_line .category {
+#xp_table .xp_line .category {
     width: 15%;
     min-width: 65px;
     text-align: end;
@@ -201,11 +203,11 @@ li {
         /* align-items: flex-start; */
     }
 
-    #xp_line .code,
-    #xp_line .year,
-    #xp_line .name,
-    #xp_line .org,
-    #xp_line .category {
+    .xp_line .code,
+    .xp_line .year,
+    .xp_line .name,
+    .xp_line .org,
+    .xp_line .category {
         box-sizing: border-box;
         width: 100% !important;
         min-width: 0 !important;
